@@ -1,0 +1,40 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <!-- Add your navigation here -->
+    </header>
+    <main>
+        <h1>Your Cart</h1>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total-cost">0</span></p>
+    </main>
+    <script src="cart.js"></script>
+    <script>
+        // Display cart items and calculate total cost
+        document.addEventListener('DOMContentLoaded', () => {
+            const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartList = document.getElementById('cart-items');
+            const totalCostElem = document.getElementById('total-cost');
+
+            let totalCost = 0;
+
+            cartItems.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.name} - $${item.price}`;
+                cartList.appendChild(li);
+                totalCost += parseFloat(item.price);
+            });
+
+            totalCostElem.textContent = totalCost.toFixed(2);
+        });
+    </script>
+</body>
+</html>

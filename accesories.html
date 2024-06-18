@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="" style="width: 50px; border: none;border-radius: 0.5rem ;height:90px ;">
+        <h1>FerdiTing Laptops</h1>
+       <nav>
+        <ul>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+       </nav>
+        <div id="cart">
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+    
+    <main>
+        <p style="font-size: larger; color: darkcyan;">Welcome to our Accessories Cart. Everything is on offer: Laptops, Chargers, Batteries, and so much more!</p>
+       <div class="tables">
+        <table width = 100% cellspacing="5" cellpadding="5"  border=5 bgcolor="silver" >
+            <tr>
+                <th colspan="4">Chargers</th>
+            </tr>
+            <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Add to Cart</th>
+                <th>Price</th>
+            </tr>
+            <tr style="height: 160px;">
+                <td><img src="chager1.jpg" alt=""></td>
+                <td>50 mm round charger <br>240v <br>Fused</td>
+                <td><button class="add-to-cart" data-name="50 mm round charger" data-price="18">Add to Cart</button></td>
+                <td>KSh 18</td>
+            </tr>
+            <tr>
+                <td><img src="chager2.jpg" alt=""></td>
+                <td>50 mm round charger <br>Singlewire <br>240v <br>Fused</td>
+                <td><button class="add-to-cart" data-name="50 mm round charger (singlewire)" data-price="19">Add to Cart</button></td>
+                <td>KSh 19</td>
+            </tr>
+            <tr>
+                <td><img src="chager3.jpg" alt=""></td>
+                <td>100 mm USB shape charger <br>240v <br>Fused</td>
+                <td><button class="add-to-cart" data-name="100 mm USB shape charger" data-price="22">Add to Cart</button></td>
+                <td>KSh 22</td>
+            </tr>
+            <tr>
+                <td><img src="chager4.jpg" alt=""></td>
+                <td>50 mm round charger <br>240v <br>Fused</td>
+                <td><button class="add-to-cart" data-name="50 mm round charger" data-price="17">Add to Cart</button></td>
+                <td>KSh 17</td>
+            </tr>
+            <tr>
+                <td><img src="chager5.jpg" alt=""></td>
+                <td>200 mm slim charger <br>240v <br>Fused</td>
+                <td><button class="add-to-cart" data-name="200 mm slim charger" data-price="25">Add to Cart</button></td>
+                <td>KSh 25</td>
+            </tr>
+        </table>
+
+        <table width = 100% cellspacing="5" cellpadding="5"  border=5 bgcolor="silver" >
+            <tr>
+                <th colspan="4">Batteries</th>
+            </tr>
+            <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Add to Cart</th>
+                <th>Price</th>
+            </tr>
+            <tr style="height: 160px;">
+                <td><img src="battery1.jpg" alt=""></td>
+                <td>Lithium Ion <br>3.7V <br>5000mAh</td>
+                <td><button class="add-to-cart" data-name="Lithium Ion 5000mAh battery" data-price="50">Add to Cart</button></td>
+                <td>KSh 50</td>
+            </tr>
+            <tr>
+                <td><img src="battery2.jpg" alt=""></td>
+                <td>Lithium Ion <br>3.7V <br>6000mAh</td>
+                <td><button class="add-to-cart" data-name="Lithium Ion 6000mAh battery" data-price="45">Add to Cart</button></td>
+                <td>KSh 45</td>
+            </tr>
+            <tr>
+                <td><img src="battery3.jpg" alt=""></td>
+                <td>Lithium Ion Back-Up battery <br>4.2V <br>10000mAh</td>
+                <td><button class="add-to-cart" data-name="Lithium Ion Back-Up battery" data-price="100">Add to Cart</button></td>
+                <td>KSh 100</td>
+            </tr>
+            <tr>
+                <td><img src="battery4.jpg" alt=""></td>
+                <td>Lithium Ion external battery <br>3.7V<br>4000mAh</td>
+                <td><button class="add-to-cart" data-name="Lithium Ion external battery" data-price="37">Add to Cart</button></td>
+                <td>KSh 37</td>
+            </tr>
+            <tr>
+                <td><img src="battery5.jpg" alt=""></td>
+                <td>Flip portable battery <br>3.7V <br>9000mAh</td>
+                <td><button class="add-to-cart" data-name="Flip portable battery" data-price="110">Add to Cart</button></td>
+                <td>KSh 110</td>
+            </tr>
+        </table>
+
+        <table width = 100% cellspacing="5" cellpadding="5"  border=5 bgcolor="silver" >
+            <tr>
+                <th colspan="4">Mouse</th>
+            </tr>
+            <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Add to Cart</th>
+                <th>Price</th>
+            </tr>
+            <tr style="height: 160px;">
+                <td><img src="mouse1..jpg" alt=""></td>
+                <td>Wireless <br>All black<br>Hand fit</td>
+                <td><button class="add-to-cart" data-name="Wireless mouse" data-price="3">Add to Cart</button></td>
+                <td>KSh 3</td>
+            </tr>
+            <tr>
+                <td><img src="mouse2.jpg" alt=""></td>
+                <td>Wired <br>Highly curved<br>Hand fit</td>
+                <td><button class="add-to-cart" data-name="Wired mouse (highly curved)" data-price="3">Add to Cart</button></td>
+                <td>KSh 3</td>
+            </tr>
+            <tr>
+                <td><img src="mouse3.webp" alt=""></td>
+                <td>Wired <br>LED lights <br>Hand fit</td>
+                <td><button class="add-to-cart" data-name="Wired mouse (LED lights)" data-price="3">Add to Cart</button></td>
+                <td>KSh 3</td>
+            </tr>
+            <tr>
+                <td><img src="mouse4.jpg" alt=""></td>
+                <td>Reverse modeled <br>Pure black wired<br>Hand fit</td>
+                <td><button class="add-to-cart" data-name="Reverse modeled mouse" data-price="3">Add to Cart</button></td>
+                <td>KSh 3</td>
+            </tr>
+            <tr>
+                <td><img src="mouse5.jpg" alt=""></td>
+                <td>Reverse modeled <br>Long wired<br>Hand fit</td>
+                <td><button class="add-to-cart" data-name="Reverse modeled long wired mouse" data-price="5">Add to Cart</button></td>
+                <td>KSh 5</td>
+            </tr>
+        </table>
+
+        <table width = 100% cellspacing="5" cellpadding="5"  border=5 bgcolor="silver" >
+            <tr>
+                <th colspan="4">Keyboards</th>
+            </tr>
+            <tr>
+
+
+                <th>Product</th>
+                <th>Description</th>
+                <th>Add to Cart</th>
+                <th>Price</th>
+            </tr>
+            <tr style="height: 160px;">
+                <td><img src="key1.jpg" alt=""></td>
+                <td>50 cm x 15 cm<br>Wired<br>LED lights</td>
+                <td><button class="add-to-cart" data-name="Wired keyboard (LED lights)" data-price="10">Add to Cart</button></td>
+                <td>KSh 10</td>
+            </tr>
+            <tr>
+                <td><img src="key2.jpg" alt=""></td>
+                <td>50 cm x 15 cm<br>Wired <br>No lights</td>
+                <td><button class="add-to-cart" data-name="Wired keyboard (no lights)" data-price="9">Add to Cart</button></td>
+                <td>KSh 9</td>
+            </tr>
+            <tr>
+                <td><img src="key3.jpg" alt=""></td>
+                <td>50 cm x 15 cm <br>Wired <br>Night lights</td>
+                <td><button class="add-to-cart" data-name="Wired keyboard (night lights)" data-price="8">Add to Cart</button></td>
+                <td>KSh 8</td>
+            </tr>
+            <tr>
+                <td><img src="key4.jpg" alt=""></td>
+                <td>50 cm x 15 cm <br>Wired / Wireless <br>Night lights</td>
+                <td><button class="add-to-cart" data-name="Wired/Wireless keyboard (night lights)" data-price="7">Add to Cart</button></td>
+                <td>KSh 7</td>
+            </tr>
+            <tr>
+                <td><img src="key5.jpg" alt=""></td>
+                <td>50 cm x 12 cm <br>Wired<br>No lights</td>
+                <td><button class="add-to-cart" data-name="Wired keyboard (no lights)" data-price="6">Add to Cart</button></td>
+                <td>KSh 6</td>
+            </tr>
+        </table>
+
+        <table width = 100% cellspacing="5" cellpadding="5"  border=5 bgcolor="silver" >
+            <tr>
+                <th colspan="4">Printers</th>
+            </tr>
+            <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Add to Cart</th>
+                <th>Price</th>
+            </tr>
+            <tr style="height: 160px;">
+                <td><img src="prinnter2.jpg" alt=""></td>
+                <td>Coloured Printer <br>240v <br>Fused</td>
+                <td><button class="add-to-cart" data-name="Coloured Printer" data-price="118">Add to Cart</button></td>
+                <td>KSh 118</td>
+            </tr>
+            <tr>
+                <td><img src="printer1.jpg" alt=""></td>
+                <td>Coloured Printer<br>240v <br>Fused</td>
+                <td><button class="add-to-cart" data-name="Coloured Printer" data-price="115">Add to Cart</button></td>
+                <td>KSh 115</td>
+            </tr>
+            <tr>
+                <td><img src="printer3.jpg" alt=""></td>
+                <td>Digital Printer<br>240v <br>Fused</td>
+                <td><button class="add-to-cart" data-name="Digital Printer" data-price="222">Add to Cart</button></td>
+                <td>KSh 222</td>
+            </tr>
+            <tr>
+                <td><img src="printer4.jpg" alt=""></td>
+                <td>Digital Printer <br>240v <br>Fused</td>
+                <td><button class="add-to-cart" data-name="Digital Printer" data-price="177">Add to Cart</button></td>
+                <td>KSh 177</td>
+            </tr>
+            <tr>
+                <td><img src="printer5.jpg" alt=""></td>
+                <td>Digital Printer <br>240v <br>Fused Analogue look</td>
+                <td><button class="add-to-cart" data-name="Digital Printer (Analogue look)" data-price="25">Add to Cart</button></td>
+                <td>KSh 25</td>
+            </tr>
+        </table>
+       </div>
+    </main>
+   <script src="cart.js"></script>
+   <script src="server.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="custom-alert" class="custom-alert">
+        <div class="alert-content">
+            <span class="close-btn" onclick="closeAlert()">×</span>
+            <p id="alert-message"></p>
+        </div>
+    </div>
+
+    <div class="form">
+        <h1 class="form_tittle">SIGN UP FORM</h1>
+    <form id="signup-form">
+        <div class="details">
+            <h2>First Name</h2>
+            <input type="text" id="firstname" placeholder="First Name">
+        </div>
+        <div class="details">
+            <h2>Last Name</h2>
+            <input type="text" id="lastname" placeholder="Last Name">
+        </div>
+        <div class="details">
+            <h2>Email</h2>
+            <input type="email" id="email" placeholder="Email">
+        </div>
+        <div class="details">
+            <h2>Enter Password</h2>
+            <input type="password" id="password" placeholder="Password">
+        </div>
+        <div class="details">
+            <h2>Confirm Pasword</h2>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+        </div>
+        <div class="details">
+            <h2>Phone Number</h2>
+            <input type="tel" id="phone" placeholder="Phone Number">
+        </div>
+        <div class="details">
+            <h2>University</h2>
+            <input type="text" placeholder="university" id="university">
+        </div>
+        <div class="button">
+            <button type="submit">Sign Up</button>
+        </div>
+        
+    </form>
+</div>
+    <p id="error-message" class="hidden">Please fill all fields</p>
+
+    <script >
+        document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('signup-form');
+    const errorMessage = document.getElementById('error-message');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const firstname = document.getElementById('firstname').value.trim();
+        const lastname = document.getElementById('lastname').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value.trim();
+        const confirmPassword = document.getElementById('confirmPassword').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const university = document.getElementById('university').value.trim();
+
+        if (firstname === '' || lastname === '' || email === '' || password === '' || confirmPassword === '' || phone === '') {
+            showAlert('Please fill out all the Fields');
+            return false;
+        } else {
+            // Redirect to home page or perform any other action upon successful sign up
+            window.location.href = 'index.html';
+            return true;
+        }
+    });
+    function showAlert(message) {
+        var alertBox = document.getElementById('custom-alert');
+        var alertMessage = document.getElementById('alert-message');
+        alertMessage.textContent = message;
+        alertBox.style.display = 'block';
+    }
+    
+    function closeAlert() {
+        var alertBox = document.getElementById('custom-alert');
+        alertBox.style.display = 'none';
+    }
+});
+    </script>
+    <script src="server.js"></script>
+</body>
+</html>
